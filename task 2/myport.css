@@ -1,0 +1,232 @@
+/*default settings*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root
+{--text-color:#1f1f21;
+    --bg-color:#fff;
+    --main-color:#ffae00;
+    --big-font:5rem;
+    --p-font:1.1rem;
+    --accent-color:#805905;
+}
+body{
+   background: var(--bg-color);
+   color:var(--text-color);
+   overflow-x:hidden ;
+}
+
+.primary-btn{
+    background-color: var(--main-color);
+    border-radius: 6px;
+    font-weight:700px;
+    color: var(--text-color) !important;
+    padding: 12px 24px;
+    box-shadow:0 0 2px rgb(48, 27, 3);
+    transition: 0.2s ease-out;
+    
+}
+.primary-btn:hover{
+    background-color: var(--accent-color);
+    transform: translateY(-10px);
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+ }
+
+/*header*/ 
+header{
+    position: fixed;
+    top:0;
+    right:0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 0;
+    background-color: rgb(148, 94, 18);
+    transition: all ease .45s; 
+}
+.logo{
+color: var(--text-color);
+font-size:41px ;
+font-weight: 600;
+}
+.logo span{
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+    margin-top: 10px;
+}
+.navbar a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color:var(--main-color)
+}
+.navbar a.active{
+    color:var(--main-color)
+}
+
+/*home section*/
+section{
+    padding:0 15%;
+}
+.home{
+    position:relative;
+    width:100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+    margin-top:50px;
+}
+.home-img{
+    width:430px;
+    height: 430px;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.home-text span{
+    padding:5px 25px;
+    background:linear-gradient(130.08deg,#866e03 0%,#ab0505 100%);
+    box-shadow: 0px 20px 40px #52020270;
+    border-radius: 100px;
+    color: wheat;
+    font-weight: 700;
+    font-size:15px;
+    text-transform: uppercase;
+    
+}
+.home-text h1{
+    font-size: var(--big-font);
+    margin: 23px 0;
+    
+}
+.home-text p{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #483905;
+    line-height: 20px;
+    mask-border: 30px;
+    margin-bottom: 30px;
+}
+
+/*about-me*/
+.about-me{
+    position:relative;
+    width:100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+
+}
+.about-me img{
+    width:800px;
+    height: 800px;
+}
+.about-me-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.about-me-text p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #483905;
+    line-height: 30px;
+    mask-border: 30px;
+    margin-bottom: 30px;
+}
+
+/*skills section*/
+.skills{
+    position:relative;
+    width:100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;  
+}
+.skills-text h1{
+    font-size: var(--big-font);
+    margin: 23px 0;
+}
+.skills-text ul{
+    
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #483905;
+        line-height: 30px;
+        mask-border: 30px;
+        margin-bottom: 30px;
+    
+}
+.skills img{
+    
+    width:300px;
+    height: 300px;
+}
+.skills-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   
+}
+/*share section*/
+.share{
+    position: fixed;
+    bottom: 20px;
+    left: 15%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    
+}
+.share p{
+    font-size: 17px;
+    color: var(--text-color);
+    margin-right: 25px;
+}
+.social i{
+display: inline-flex;
+align-items: center;
+justify-content: center;
+height: 45px;
+width: 45px;
+background:linear-gradient(130.08deg,#866e03 0%,#ab0505 100%);
+box-shadow: 0px 20px 40px #52020270;
+border:1px solid #3b3b3b;
+border-radius: 50%;
+color: wheat;
+font-size: 20px;
+margin: 0 7px;
+transition: all 0.6s ease-in-out;
+}
+.social i:hover{
+    transform: translateY(-10px);
+}
+
